@@ -15,21 +15,27 @@ function renderBooks() {
 	}
 	booksToRender.forEach((book) => {
 		htmlToRender +=
-        `<div class = 'book container-sm' id = '${book.id}'>
-            Title: ${book.title}<br>
-            Author: ${book.author}<br>
-            <button type="button" class="btn btn-primary click" id="buy-btn">Buy ➕</button>
-            <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#book-details-${book.id}" aria-expanded="false" aria-controls="book-details">
-                Details
-                </button>
-            </p>
-            <div class="collapse book-details" id="book-details-${book.id}">
-                <div class="card card-body">
-                Summary: ${book.description} <br>
-                Price: ${book.price}
-                </div>
-            </div>
+        `<div class = 'book container row' id = '${book.id}'>
+			<div class = 'col-4'>
+				<img src="assets/${book.id}.jpg" class="img-thumbnail picture">
+			</div>
+
+			<div class = 'col-8'>
+				Title: ${book.title}<br>
+				Author: ${book.author}<br>
+				<button type="button" class="btn btn-primary click" id="buy-btn">Buy ➕</button>
+				<p>
+					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#book-details-${book.id}" aria-expanded="false" aria-controls="book-details">
+					Details
+					</button>
+				</p>
+				<div class="collapse book-details" id="book-details-${book.id}">
+					<div class="card card-body">
+					Summary: ${book.description} <br>
+					Price: ${book.price}
+					</div>
+				</div>
+			</div>
         </div>`
 	})
 	htmlBooksDiv.innerHTML = htmlToRender
@@ -70,7 +76,7 @@ function initButtons(){
 	const buyBooks = document.querySelectorAll('#buy-btn')
 	buyBooks.forEach(buybtn => {
 		buybtn.addEventListener('click', (e) => {
-			addBookToCart(e.target.parentNode.id)
+			addBookToCart(e.target.parentNode.parentNode.id)
 		})
 	})
 }

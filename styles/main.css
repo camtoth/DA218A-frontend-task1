@@ -14,7 +14,6 @@ h1 {
 
 #books-container {
   background-color: blue;
-  border-width: 25px;
 }
 
 .book {
@@ -25,4 +24,10 @@ h1 {
   border-width: 3px;
   border-style: inset;
   border-color: fuchsia;
+}
+
+.picture {
+  width: 90%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
