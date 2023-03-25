@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Responsive design with Bootstrap",
+        "author": "Cameron Toth",
+        "description": "Lorem ipsum / or your text",
+        "category": "UX",
+        "price": 150
+    },
+    {
+        "id": 2,
+        "title": "HTML - an introduction",
+        "author": "Cameron Toth",
+        "description": "Lorem ipsum / or your text",
+        "category": "HTML",
+        "price": 100
+    },
+    {
+        "id": 3,
+        "title": "CSS - an introduction",
+        "author": "Cameron Toth",
+        "description": "Lorem ipsum / or your text",
+        "category": "CSS",
+        "price": 100
+    },
+    {
+        "id": 4,
+        "title": "JavaScript - an introduction",
+        "author": "Cameron Toth",
+        "description": "Lorem ipsum / or your text",
+        "category": "JavaScript",
+        "price": 200
+    }
+  ]
