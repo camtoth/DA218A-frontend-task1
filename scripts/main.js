@@ -3,15 +3,26 @@ let books;
 let booksInCart = [];
 
 // render functions
-function renderBooks() {
+function renderBooks(filteredBooks) {
     const htmlBooksDiv = document.getElementById("js-books");
     let htmlToRender = '';
-    books.forEach((book) => {
+    filteredBooks.forEach((book) => {
         htmlToRender += 
         `<div class = 'book container-sm' id = '${book.id}'>
             Title: ${book.title}<br>
             Author: ${book.author}<br>
             <button type="button" class="btn btn-primary click" id="buy-btn">Buy ➕</button>
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#book-details-${book.id}" aria-expanded="false" aria-controls="book-details">
+                Details
+                </button>
+            </p>
+            <div class="collapse book-details" id="book-details-${book.id}">
+                <div class="card card-body">
+                Summary: ${book.description} <br>
+                Price: ${book.price}
+                </div>
+            </div>
         </div>`;
     })
     htmlBooksDiv.innerHTML = htmlToRender;
@@ -25,7 +36,6 @@ async function readFromJson(path) {
 function initButtons(){
     // cart
     document.getElementById('cart-btn').addEventListener('click', (e) => {
-        e.target.textContent = 'Clicked!'
         showCart()
       });
 
@@ -33,8 +43,6 @@ function initButtons(){
       const buyBooks = document.querySelectorAll('#buy-btn')
       buyBooks.forEach(buybtn => {
         buybtn.addEventListener('click', (e) => {
-            console.log()
-            e.target.textContent = 'Clicked!'
             addBookToCart(e.target.parentNode.id)
         });
       });
@@ -80,7 +88,7 @@ function showCart(id) {
 async function init() {
     books = await readFromJson('data/books.json');
 
-    renderBooks()
+    renderBooks(books)
     initButtons()
     //render all the menus and nav options
 }
