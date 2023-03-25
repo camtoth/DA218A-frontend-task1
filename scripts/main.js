@@ -1,13 +1,20 @@
 //global variables
 let books;
+let filteredBooks = [];
 let booksInCart = [];
 
 // render functions
-function renderBooks(filteredBooks) {
+function renderBooks() {
     const htmlBooksDiv = document.getElementById("js-books");
-    let htmlToRender = '';
-    filteredBooks.forEach((book) => {
-        htmlToRender += 
+    let booksToRender = []
+    let htmlToRender = ''
+    if (filteredBooks.length != 0){
+        booksToRender = filteredBooks
+    } else {
+        booksToRender = books
+    }
+    booksToRender.forEach((book) => {
+        htmlToRender +=
         `<div class = 'book container-sm' id = '${book.id}'>
             Title: ${book.title}<br>
             Author: ${book.author}<br>
@@ -33,6 +40,26 @@ async function readFromJson(path) {
     return await (await fetch(path)).json(); 
 }
 
+function addFilter(filterKey, filterValue) {
+    books.forEach(book => {
+        if(book[filterKey] == filterValue) {
+            filteredBooks.push(book)
+        }
+    })
+    renderBooks()
+}
+
+function removeFilter(filterKey, filterValue) {
+    let newFilteredBooks = []
+    filteredBooks.forEach(book => {
+        if(book[filterKey] != filterValue) {
+            newFilteredBooks.push(book)
+        }
+    })
+    filteredBooks = newFilteredBooks
+    renderBooks()
+}
+
 function initButtons(){
     // cart
     document.getElementById('cart-btn').addEventListener('click', (e) => {
@@ -46,6 +73,35 @@ function initButtons(){
             addBookToCart(e.target.parentNode.id)
         });
       });
+}
+
+function initFilters(){
+    const authorFilter = document.getElementById('js-filter-author-modal')
+    let htmlToRender = ''
+    let listOfAuthors = new Set()
+    books.forEach(book => {
+        listOfAuthors.add(book.author)
+    })
+    listOfAuthors.forEach(author => {
+        htmlToRender +=
+        `<div class="filter-check">
+        <input class="filter-check-input" type="checkbox" value="${author}" id="author">
+        <label class="filter-check-label" for="flexCheckDefault">${author}</label>
+        </div>`;
+    })
+    authorFilter.innerHTML = htmlToRender
+
+    const filterCheckboxes = document.querySelectorAll('input[type=checkbox]')
+    filterCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', checkbox => {
+            if (checkbox.currentTarget.checked){
+                addFilter(checkbox.currentTarget.id, checkbox.currentTarget.value)
+            } else {
+                removeFilter(checkbox.currentTarget.id, checkbox.currentTarget.value)
+            }
+        })
+    })
+
 }
 
 function addBookToCart(id){
@@ -87,9 +143,9 @@ function showCart(id) {
 // init
 async function init() {
     books = await readFromJson('data/books.json');
-
-    renderBooks(books)
+    renderBooks()
     initButtons()
+    initFilters()
     //render all the menus and nav options
 }
 
