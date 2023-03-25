@@ -13,9 +13,17 @@ h1 {
   margin: 25px;
 }
 
+#books-container {
+  background-color: blue;
+  border-width: 25px;
+}
+
 .book {
   background-color: burlywood;
   color: rgb(68, 63, 63);
-  margin: 25px;
-  padding: 20px;
+  align-items: center;
+  padding: 25px;
+  border-width: 3px;
+  border-style: inset;
+  border-color: fuchsia;
 }
