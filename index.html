@@ -16,18 +16,35 @@
                 Welcome to the bookstore!
             </h1>
         </div>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filter
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-author-modal" value="author">Author</a>
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-category-modal" value="category">Category</a>
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-price-modal" value="price">Price</a>
+        <div class = "row">
+            <div class="dropdown col-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item filter" data-toggle="modal" data-target="#filter-author-modal" value="author">Author</a>
+                <a class="dropdown-item filter" data-toggle="modal" data-target="#filter-category-modal" value="category">Category</a>
+                <a class="dropdown-item filter" data-toggle="modal" data-target="#filter-price-modal" value="price">Price</a>
+                </div>
             </div>
+            <div class="dropdown col-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" id="title-up">Title (ascending)</a>
+                <a class="dropdown-item" id="title-down">Title (descending)</a>
+                <a class="dropdown-item" id="price-up">Price (ascending)</a>
+                <a class="dropdown-item" id="price-down">Price (descending)</a>
+                <a class="dropdown-item" id="author-up">Author (ascending)</a>
+                <a class="dropdown-item" id="author-down">Author (descending)</a>
+                </div>
+            </div>
+                    <!-- Button trigger modal -->
+        <div class="d-flex flex-row-reverse col-6" id="cart">
+            <button type="button" class="btn btn-primary click" id="cart-btn" data-toggle="modal" data-target="#cart-modal">Cart 🛒</button>
         </div>
-
+        </div>
         <!-- Modal - filter -->
         <div class="modal fade" id="filter-author-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -86,11 +103,6 @@
                 </div>
             </div>
             </div>
-        </div>
-
-        <!-- Button trigger modal -->
-        <div class="d-flex flex-row-reverse" id="cart">
-            <button type="button" class="btn btn-primary click" id="cart-btn" data-toggle="modal" data-target="#cart-modal">Cart 🛒</button>
         </div>
 
         <!-- Modal - cart -->

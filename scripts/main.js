@@ -76,7 +76,7 @@ function initButtons(){
 }
 
 function initFilters(){
-	const allFilters = document.querySelectorAll('.dropdown-item')
+	const allFilters = document.querySelectorAll('.filter')
 	let filterKeys = []
 
 	allFilters.forEach(filter => {
@@ -110,7 +110,39 @@ function initFilters(){
 			}
 		})
 	})
+}
 
+function initSorting () {
+	document.getElementById('title-up').addEventListener('click', () => {
+		books.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+		filteredBooks.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+		renderBooks()
+	})
+	document.getElementById('title-down').addEventListener('click', () => {
+		books.sort((a,b) => (a.title < b.title) ? 1 : ((b.title < a.title) ? -1 : 0))
+		filteredBooks.sort((a,b) => (a.title < b.title) ? 1 : ((b.title < a.title) ? -1 : 0))
+		renderBooks()
+	})
+	document.getElementById('price-up').addEventListener('click', () => {
+		books.sort((a,b) => a.price - b.price)
+		filteredBooks.sort((a,b) => a.price - b.price)
+		renderBooks()
+	})
+	document.getElementById('price-down').addEventListener('click', () => {
+		books.sort((a,b) => b.price - a.price)
+		filteredBooks.sort((a,b) => b.price - a.price)
+		renderBooks()
+	})
+	document.getElementById('author-up').addEventListener('click', () => {
+		books.sort((a,b) => (a.author > b.author) ? 1 : ((b.author > a.author) ? -1 : 0))
+		filteredBooks.sort((a,b) => (a.author > b.author) ? 1 : ((b.author > a.author) ? -1 : 0))
+		renderBooks()
+	})
+	document.getElementById('author-down').addEventListener('click', () => {
+		books.sort((a,b) => (a.author < b.author) ? 1 : ((b.author < a.author) ? -1 : 0))
+		filteredBooks.sort((a,b) => (a.author < b.author) ? 1 : ((b.author < a.author) ? -1 : 0))
+		renderBooks()
+	})
 }
 
 function addBookToCart(id){
@@ -151,6 +183,7 @@ async function init() {
 	renderBooks()
 	initButtons()
 	initFilters()
+	initSorting()
 	//render all the menus and nav options
 }
 
