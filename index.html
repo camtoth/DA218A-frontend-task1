@@ -19,26 +19,66 @@
 
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
+              Filter
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-author-modal">Author</a>
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-category-modal">Category</a>
-              <a class="dropdown-item" data-toggle="modal" data-target="#filter-price-modal">Price</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#filter-author-modal" value="author">Author</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#filter-category-modal" value="category">Category</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#filter-price-modal" value="price">Price</a>
             </div>
         </div>
 
-        <!-- Modal - author filter -->
-        <div class="modal fade" id="filter-author-modal" tabindex="-1" role="dialog" aria-labelledby="filter-author-modal-label" aria-hidden="true">
+        <!-- Modal - filter -->
+        <div class="modal fade" id="filter-author-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="filter-author-modal-label">Filter by author</h5>
+                <h5 class="modal-title" id="filter-modal-label">Filter by author</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
                 <div class="modal-body" id="js-filter-author-modal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="filter-btn">Filter</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal - filter -->
+        <div class="modal fade" id="filter-category-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="filter-modal-label">Filter by author</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="js-filter-category-modal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="filter-btn">Filter</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal - filter -->
+        <div class="modal fade" id="filter-price-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="filter-modal-label">Filter by author</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="js-filter-price-modal">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" id="filter-btn">Filter</button>
