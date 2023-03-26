@@ -5,7 +5,7 @@
         "author": "Lizi The Cat",
         "description": "Bootstrap is a popular open-source framework for building responsive, mobile-first web applications. It was developed by Twitter in 2010 and has since become one of the most widely used front-end frameworks for web development. Bootstrap provides a set of HTML, CSS, and JavaScript components and tools that can be used to quickly build professional-looking web applications.\nOne of the key features of Bootstrap is its responsive design. Bootstrap includes a grid system that allows developers to create layouts that automatically adjust to different screen sizes. This means that web applications built with Bootstrap will look good and function well on desktops, tablets, and mobile devices.\nBootstrap also includes a wide range of pre-designed components that can be easily integrated into web applications. These components include navigation bars, buttons, forms, dropdown menus, modals, and more. By using these pre-designed components, developers can save time and effort when building web applications and ensure that their applications have a consistent look and feel.\nAnother advantage of using Bootstrap is its extensive documentation and community support. Bootstrap has a large and active community of developers who share their knowledge and expertise through forums, blogs, and social media. Bootstrap's documentation is comprehensive and easy to follow, making it a valuable resource for developers of all skill levels.\nFinally, Bootstrap is highly customizable. Developers can customize the look and feel of their Bootstrap applications by changing the default styles and colors or by creating their own custom styles. Additionally, Bootstrap can be used with other front-end frameworks and libraries, such as Angular and React, to further extend its functionality.\nOverall, Bootstrap is a powerful and versatile framework that can help developers quickly build responsive, mobile-first web applications. Its pre-designed components, responsive grid system, and extensive documentation and community support make it an essential tool for modern web development.",
         "category": "UX",
-        "price": 150
+        "price": 100
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "author": "Lizi The Cat",
         "description": "HTML (Hypertext Markup Language) is the standard markup language used for creating web pages and web applications. It was first introduced in 1993 and has since become a fundamental building block of the World Wide Web.\nHTML is used to structure content on a web page by defining the various elements of the page, such as headings, paragraphs, lists, images, videos, and links. These elements are created by using HTML tags, which are surrounded by angle brackets and placed within the content of the page.\nOne of the key features of HTML is its simplicity. HTML is easy to learn and use, as it requires only a basic understanding of syntax and structure to get started. Additionally, HTML is a text-based language, which means that web pages can be created using any text editor or integrated development environment (IDE).\nHTML is also highly flexible and customizable. Developers can use CSS (Cascading Style Sheets) to style and layout their HTML content, and JavaScript to add interactivity and functionality. Additionally, HTML can be used in conjunction with other web technologies, such as PHP and SQL, to create dynamic web applications.\nOne of the unique features of HTML is its accessibility. HTML is designed to be easily readable and navigable by people with disabilities, such as those who are visually impaired or use assistive technologies to browse the web. This is achieved through the use of semantic markup, which allows developers to create content that is easily understood by both humans and machines.\nOverall, HTML is a powerful and versatile language that is essential for web development. Its simplicity, flexibility, and accessibility make it an essential tool for creating engaging and accessible web content.",
         "category": "HTML",
-        "price": 100
+        "price": 150
     },
     {
         "id": 3,
@@ -61,7 +61,7 @@
         "author": "Joshua Taylor",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "CSS",
-        "price": 100
+        "price": 250
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "author": "Joanne Winters",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "UX",
-        "price": 100
+        "price": 250
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "author": "Jenny Lee",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "UX",
-        "price": 100
+        "price": 250
     },
     {
         "id": 11,
@@ -141,7 +141,7 @@
         "author": "Joanne Winters",
         "description": "Rust better + ratio.",
         "category": "JavaScript",
-        "price": 100
+        "price": 300
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "author": "Unknown",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "JavaScript",
-        "price": 100
+        "price": 300
     },
     {
         "id": 20,
@@ -157,6 +157,6 @@
         "author": "Dorothy J. Pettit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "JavaScript",
-        "price": 100
+        "price": 300
     }
   ]

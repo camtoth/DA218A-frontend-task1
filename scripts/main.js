@@ -167,15 +167,15 @@ function showCart() {
 		htmlToRender +=
         `<div class = 'cart container' id = '${book.id}'>
             <h6>Title: ${book.title}</h6>
-            Price: ${book.price}<br>
+            Price: ${book.price} SEK<br>
             In cart: ${book.copiesInCart}&nbsp;&nbsp;&nbsp;&nbsp;
-            Subtotal: ${book.price*book.copiesInCart}
+            Subtotal: ${book.price*book.copiesInCart} SEK
 			<hr>
         </div>`
 		total += book.price*book.copiesInCart
 	})
     
-	htmlToRender += `<div class='container'><h5>Total: ${total}</h5></div>`
+	htmlToRender += `<div class='container'><h5>Total: ${total} SEK</h5></div>`
 	console.log(htmlCartDiv)
 	htmlCartDiv.innerHTML = htmlToRender
 }
