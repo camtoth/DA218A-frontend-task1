@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Responsive design with Bootstrap",
         "author": "Lizi The Cat",
-        "description": "Lorem ipsum / or your text",
+        "description": "Bootstrap is a popular open-source framework for building responsive, mobile-first web applications. It was developed by Twitter in 2010 and has since become one of the most widely used front-end frameworks for web development. Bootstrap provides a set of HTML, CSS, and JavaScript components and tools that can be used to quickly build professional-looking web applications.\nOne of the key features of Bootstrap is its responsive design. Bootstrap includes a grid system that allows developers to create layouts that automatically adjust to different screen sizes. This means that web applications built with Bootstrap will look good and function well on desktops, tablets, and mobile devices.\nBootstrap also includes a wide range of pre-designed components that can be easily integrated into web applications. These components include navigation bars, buttons, forms, dropdown menus, modals, and more. By using these pre-designed components, developers can save time and effort when building web applications and ensure that their applications have a consistent look and feel.\nAnother advantage of using Bootstrap is its extensive documentation and community support. Bootstrap has a large and active community of developers who share their knowledge and expertise through forums, blogs, and social media. Bootstrap's documentation is comprehensive and easy to follow, making it a valuable resource for developers of all skill levels.\nFinally, Bootstrap is highly customizable. Developers can customize the look and feel of their Bootstrap applications by changing the default styles and colors or by creating their own custom styles. Additionally, Bootstrap can be used with other front-end frameworks and libraries, such as Angular and React, to further extend its functionality.\nOverall, Bootstrap is a powerful and versatile framework that can help developers quickly build responsive, mobile-first web applications. Its pre-designed components, responsive grid system, and extensive documentation and community support make it an essential tool for modern web development.",
         "category": "UX",
         "price": 150
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "HTML - an introduction",
         "author": "Lizi The Cat",
-        "description": "Lorem ipsum / or your text",
+        "description": "HTML (Hypertext Markup Language) is the standard markup language used for creating web pages and web applications. It was first introduced in 1993 and has since become a fundamental building block of the World Wide Web.\nHTML is used to structure content on a web page by defining the various elements of the page, such as headings, paragraphs, lists, images, videos, and links. These elements are created by using HTML tags, which are surrounded by angle brackets and placed within the content of the page.\nOne of the key features of HTML is its simplicity. HTML is easy to learn and use, as it requires only a basic understanding of syntax and structure to get started. Additionally, HTML is a text-based language, which means that web pages can be created using any text editor or integrated development environment (IDE).\nHTML is also highly flexible and customizable. Developers can use CSS (Cascading Style Sheets) to style and layout their HTML content, and JavaScript to add interactivity and functionality. Additionally, HTML can be used in conjunction with other web technologies, such as PHP and SQL, to create dynamic web applications.\nOne of the unique features of HTML is its accessibility. HTML is designed to be easily readable and navigable by people with disabilities, such as those who are visually impaired or use assistive technologies to browse the web. This is achieved through the use of semantic markup, which allows developers to create content that is easily understood by both humans and machines.\nOverall, HTML is a powerful and versatile language that is essential for web development. Its simplicity, flexibility, and accessibility make it an essential tool for creating engaging and accessible web content.",
         "category": "HTML",
         "price": 100
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "CSS - an introduction",
         "author": "Lizi The Cat",
-        "description": "Lorem ipsum / or your text",
+        "description": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and layout of web pages. It was first introduced in 1996 and has since become a fundamental part of modern web development.\nCSS is used to style HTML elements by defining various properties, such as font size, color, background, spacing, and positioning. These properties can be applied to individual elements or to groups of elements, providing developers with precise control over the appearance of their web pages.\nOne of the key features of CSS is its separation of content and presentation. By separating the presentation layer from the content layer, developers can create web pages that are more accessible, maintainable, and scalable. Additionally, CSS can be used to create responsive web designs that adjust to different screen sizes and devices.\nCSS includes a wide range of selectors, which allow developers to target specific elements on a web page. Selectors can be used to apply styles to all elements of a particular type, to specific elements based on their class or ID, or to elements based on their position in the HTML structure.\nAnother important aspect of CSS is its modularity. CSS allows developers to create reusable styles that can be applied to multiple elements throughout a web page or across multiple pages. This can greatly simplify the development process and improve code reusability.\nFinally, CSS is highly extensible. Developers can use CSS preprocessors, such as Sass and Less, to add additional functionality and features to their stylesheets. Additionally, CSS can be used in conjunction with other web technologies, such as JavaScript and HTML5, to create rich and interactive web experiences.",
         "category": "CSS",
         "price": 100
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "JavaScript - an introduction",
         "author": "Lizi The Cat",
-        "description": "Lorem ipsum / or your text",
+        "description": "JavaScript is a programming language used primarily for creating interactive web pages and web applications. It is a high-level, object-oriented language that can be used both on the client-side and server-side of web development. It was infamously created in 1995 over the course of a single week, by developer Brendan Eich at Netscape, and has since become one of the most widely used programming languages in the world. \nOne of the key features of JavaScript is its ability to manipulate the Document Object Model (DOM) of web pages. This means that JavaScript can be used to dynamically update and change the content of a web page without requiring a page refresh. It can be used to create interactive elements such as forms, dropdown menus, and buttons, as well as to validate user input and handle events.\nJavaScript is often used in conjunction with other web technologies such as HTML and CSS. HTML provides the structure of a web page, CSS provides the styling, and JavaScript provides the interactivity. It is also commonly used with libraries and frameworks such as jQuery, React, and AngularJS, which provide additional functionality and simplify the development process.\nIn addition to its use in web development, JavaScript can also be used for server-side scripting using platforms such as Node.js. This allows developers to use the same language on both the client-side and server-side of a web application, which can simplify development and improve code reusability.\nOverall, JavaScript is a powerful and versatile programming language that is essential for modern web development. Its ability to create interactive and dynamic web pages makes it a valuable tool for creating engaging user experiences, and its use on both the client-side and server-side of web development makes it a highly adaptable language.",
         "category": "JavaScript",
         "price": 200
     },
@@ -97,11 +97,11 @@
     },
     {
         "id": 13,
-        "title": "HyperText Transfer Protocol - Who Is She?",
+        "title": "Hypertext Markup Language - Who Is She?",
         "author": "Mark Grebrekcuz",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "HTML",
-        "price": 100
+        "price": 150
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "author": "Joshua Taylor",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "HTML",
-        "price": 100
+        "price": 150
     },
     {
         "id": 15,
@@ -125,7 +125,7 @@
         "author": "Dorothy J. Pettit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "HTML",
-        "price": 100
+        "price": 200
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "author": "Dorothy J. Pettit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "category": "JavaScript",
-        "price": 100
+        "price": 200
     },
     {
         "id": 18,

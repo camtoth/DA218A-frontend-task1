@@ -28,8 +28,8 @@ function renderBooks() {
 				Details
 				</button>
 				<div class="collapse book-details" id="book-details-${book.id}">
-					Summary: ${book.description}<br>
-					Price: ${book.price}
+					<b>Summary:</b> ${book.description}<br><br>
+					<b>Price:</b> ${book.price} SEK
 				</div>
 			</div>
         </div>`
