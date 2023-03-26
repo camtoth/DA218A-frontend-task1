@@ -1,33 +1,43 @@
 body {
-  background-color: rgb(144, 129, 158);
+  background-color: #FDEDFF;
 }
 
 h1 {
-  background-color: antiquewhite;
+  background-color: #AF94B3;
   color: rgb(60, 60, 87);
   padding: 20px;
 }
 
-#cart {
-  color: pink;
+.btn-primary {
+  background-color: #B4D2C8;
+  border-color:  #B4D2C8;
+  color: #222;
+}
+
+.btn-primary:hover {
+  color: #222;
+  background-color: #83b5a4;
+  border-color: #83b5a4
 }
 
 #books-container {
-  background-color: blue;
+  background-color: #9DB3AD;
 }
 
 .book {
-  background-color: burlywood;
-  color: rgb(68, 63, 63);
-  align-items: center;
+  background-color: #FFF4D4;
+  color: #222;
   padding: 25px;
   border-width: 3px;
   border-style: inset;
-  border-color: fuchsia;
+  border-color: #AF94B3;
 }
 
 .picture {
   width: 90%;
   aspect-ratio: 1/1;
   object-fit: cover;
+}
+.collapse.book-details{
+  color: #222;
 }

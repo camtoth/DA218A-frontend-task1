@@ -21,19 +21,15 @@ function renderBooks() {
 			</div>
 
 			<div class = 'col-8'>
-				Title: ${book.title}<br>
-				Author: ${book.author}<br>
-				<button type="button" class="btn btn-primary click" id="buy-btn">Buy ➕</button>
-				<p>
-					<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#book-details-${book.id}" aria-expanded="false" aria-controls="book-details">
-					Details
-					</button>
-				</p>
+				<h5>${book.title}</h5>
+				Author: ${book.author}<br><br>
+				<button type="button" style="display: inline" class="btn btn-primary click" id="buy-btn">Buy ➕</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#book-details-${book.id}" aria-expanded="false" aria-controls="book-details">
+				Details
+				</button>
 				<div class="collapse book-details" id="book-details-${book.id}">
-					<div class="card card-body">
-					Summary: ${book.description} <br>
+					Summary: ${book.description}<br>
 					Price: ${book.price}
-					</div>
 				</div>
 			</div>
         </div>`
@@ -168,17 +164,18 @@ function showCart() {
 	let htmlToRender = ''
 	let total = 0
 	booksInCart.forEach((book) => {
-		htmlToRender += 
+		htmlToRender +=
         `<div class = 'cart container' id = '${book.id}'>
-            Title: ${book.title}<br>
+            <h6>Title: ${book.title}</h6>
             Price: ${book.price}<br>
-            In cart: ${book.copiesInCart}
+            In cart: ${book.copiesInCart}&nbsp;&nbsp;&nbsp;&nbsp;
             Subtotal: ${book.price*book.copiesInCart}
+			<hr>
         </div>`
 		total += book.price*book.copiesInCart
 	})
     
-	htmlToRender += `<div class = 'total container'>Total: ${total}</div>`
+	htmlToRender += `<div class='container'><h5>Total: ${total}</h5></div>`
 	console.log(htmlCartDiv)
 	htmlCartDiv.innerHTML = htmlToRender
 }
